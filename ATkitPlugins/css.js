@@ -305,4 +305,8 @@
 		AtKit.registerPlugin(pluginName, plugin);
 	}
 
+<<<<<<< HEAD
 })();
+=======
+})();
+>>>>>>> 2a57d43ba7690b0e2dfb7ae9b4d01860f6d65183

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*!
+=======
+  /*!
+>>>>>>> 2a57d43ba7690b0e2dfb7ae9b4d01860f6d65183
  * AtKit Core
  * Open Source Cross-Browser ToolBar framework
  *
@@ -899,4 +903,8 @@
 
 window['AtKit'] = new AtKit();
 
+<<<<<<< HEAD
 })(window);
+=======
+})(window);
+>>>>>>> 2a57d43ba7690b0e2dfb7ae9b4d01860f6d65183
