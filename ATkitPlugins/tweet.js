@@ -10,6 +10,10 @@
 			"tweet_title" : "Tweet this page"
 		});
 		
+		AtKit.addLocalisationMap("se", {
+			"tweet_title" : "Twittra denna sida"
+		});
+		
 		// Tweet
 		AtKit.addButton(
 			'tweet', 

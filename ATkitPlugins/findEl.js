@@ -13,9 +13,9 @@
 		});
 
 		AtKit.addLocalisationMap("se", {
-			"findEl_title" : "Hitta stycken och länkar",
+			"findEl_title" : "Hitta stycken och l&auml;nkar",
 			"findEl_findparagraphs" : "Hitta stycken",
-			"findEl_findlinks" : "Hitta länkar"
+			"findEl_findlinks" : "Hitta l&auml;nkar"
 		});
 
 		// ScrollTo Plugin
@@ -41,8 +41,7 @@
 
 						if(e.which == 13 && findEl_settings.isCtrl){
 							var input = $lib('#asTypeInput').val();
-
-							findEl_settings.storage.searchElementStorage = [];
+							/*findEl_settings.storage.searchElementStorage = [];
 
 							$lib.each(findEl_settings.storage.elementStorage, function(i, v){
 								if(v.html().substring(0, input.length).toLowerCase() == input.toLowerCase()) findEl_settings.storage.searchElementStorage.push(v.get(0));
@@ -51,7 +50,7 @@
 							findEl_settings.storage.elementStorage = findEl_settings.storage.searchElementStorage;
 
 							var elements = AtKit.call('locateElements', findEl_settings.storage.elementStorage);
-							AtKit.message(elements, function(){ $lib('#facebox a:first').focus(); });
+							AtKit.message(elements, function(){ $lib('#facebox a:first').focus(); });*/
 
 						} else {
 							var character = String.fromCharCode(e.which);
@@ -79,8 +78,6 @@
 					$lib('#facebox a:first').focus();
 					AtKit.call('applyCSS', '#searchElementsHolder a');
 				});
-
-
 			},
 			null,
 			globalFunctions
@@ -92,6 +89,7 @@
 			AtKit.getPluginURL() + 'images/document-export.png',
 			function(dialogs, functions){
 				findEl_settings.searchType = "a";
+	
 				var elements = AtKit.call('locateElements', $lib(findEl_settings.searchType));
 
 				AtKit.message(elements, function(){
@@ -124,7 +122,7 @@
 
 			if(elements.length == 0) return $lib("<p>", { html: "No elements found" });
 
-			output.append( inputText );
+			//output.append( inputText );
 
 
 			var x = 1;
@@ -151,7 +149,7 @@
 						window.location = link;
 					}
 
-					if(tagName == "H1" || tagName == "H2" || tagName == "H3" || tagName == "H4" || tagName == "H5"){
+					else if(tagName == "H1" || tagName == "H2" || tagName == "H3" || tagName == "H4" || tagName == "H5"){
 						var offset = mainEl.offset();
 
 						$lib.scrollTo(offset.top - 80, 800);
@@ -176,12 +174,15 @@
 				x++;
 			});
 
+			findEl_settings.storage.elementStorage = [];
+			findEl_settings.storage.searchElementStorage = [];
+			
 			return output;
 		});
 
 
 		// Setup
-		globalFunctions.bindKeypress();
+		globalFunctions.bindKeypress();	
 		AtKit.setCSS('#searchElementsHolder a', 'font-size: 18px');
 
 	}

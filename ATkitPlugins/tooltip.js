@@ -246,7 +246,7 @@
 		  , placement: 'top'
 		  , trigger: 'hover'
 		  , title: ''
-		  , template: '<div class="tooltip" style="position: absolute;z-index:9999999;display: block;visibility:visible;padding: 5px;font-size:11px"><div class="tooltip-arrow" style="position: absolute;width:0;height:0;"></div><div class="tooltip-inner" style="max-width: 200px;padding: 3px 8px;color: #ffffff;text-align: center;text-decoration: none;background-color: #000000;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;"></div></div>'
+		  , template: '<div class="tooltip" style="position: absolute;z-index:9999999;display: block;visibility:visible;padding: 5px;font-size:18px"><div class="tooltip-arrow" style="position: absolute;width:0;height:0;"></div><div class="tooltip-inner" style="max-width: 200px;padding: 3px 8px;color: #ffffff;text-align: center;text-decoration: none;background-color: #000000;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;"></div></div>'
 		  }
 		
 		setTimeout(function(){

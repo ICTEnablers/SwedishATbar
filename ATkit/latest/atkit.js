@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 /*!
-=======
-  /*!
->>>>>>> 2a57d43ba7690b0e2dfb7ae9b4d01860f6d65183
  * AtKit Core
  * Open Source Cross-Browser ToolBar framework
  *
@@ -24,11 +20,11 @@
 			__version: 1.3, // Version.
 			__build: 6, // Build.
 			__APIVersion: 1.0, // The version of the API.
-			__baseURL: "http://core.atbar.se/", // Load AtKit assets from here.
-			__APIURL: "http://a.atbar.se/", // API endpoint
-			__pluginURL: "http://plugins.atbar.se/", // Plugins location
-			__faceboxURL: "http://core.atbar.se/resources/js/facebox.min.js", // Facebox JS lib
-			__libURL: "http://core.atbar.se/resources/jquery/1.8/jquery.js", // URL to jQuery. CDN preferred unless this is a local install.
+			__baseURL: "https://core.atbar.se/", // Load AtKit assets from here.
+			__APIURL: "https://a.atbar.se/", // API endpoint
+			__pluginURL: "https://plugins.atbar.se/", // Plugins location
+			__faceboxURL: "https://core.atbar.se/resources/js/facebox.min.js", // Facebox JS lib
+			__libURL: "https://core.atbar.se/resources/jquery/1.8/jquery.js", // URL to jQuery. CDN preferred unless this is a local install.
 			//__bootstrapJsURL: "https://core.atbar.se/resources/js/bootstrap.min.js",
 			//__bootstrapCssURL: "https://core.atbar.se/resources/css/bootstrap.min.css",
 			__channel: "atkit", // Release channel we're running in for this version of AtKit.
@@ -362,7 +358,7 @@
 					
 			// add the reset button (if we have been told to use this)
 			if( API.settings.allowreset ){
-				API.addButton('atkit-reset', API.localisation("reset"), AtKit.internal.__assetURL + 'img/reset.png', function(){ API.reset(); }, null, null, {'cssClass':'fright'});
+				API.addButton('atkit-reset', API.localisation("reset"), AtKit.internal.__assetURL + 'img/reset.png', function(){ API.reset(); }, null, null,  {'cssClass':'fright'});
 			}
 				
 			// Add buttons.
@@ -903,8 +899,4 @@
 
 window['AtKit'] = new AtKit();
 
-<<<<<<< HEAD
 })(window);
-=======
-})(window);
->>>>>>> 2a57d43ba7690b0e2dfb7ae9b4d01860f6d65183
