@@ -669,4 +669,5 @@
 			.bind("drop", handleDrop);
 	}
 
+
 }(this, this.document));
