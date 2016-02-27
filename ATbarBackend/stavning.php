@@ -334,6 +334,9 @@
 		
             if (count($suggestions)) {
                 // we have suggestions for this word
+                if(count($suggestions)>5) {
+                	$suggestions=array_slice($suggestions, 0, 5);
+                }
                 $final[$word] = $suggestions; 
             }
         }
