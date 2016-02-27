@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+	"name": "Svensk ATbar",
+	"version": "2.4",
+	"author": "ICT Enablers, ECS Accessibility Team",
+	"description": "Accessibility toolbar",
+	"background": {
+		"page": "background.html"
+	},
+	"browser_action": {
+		"name": "Starta ATbar på denna sida",
+		"default_icon": "icon48.png",
+		"icons": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" }
+	},
+	"permissions": [
+		"tabs",
+		"*://*/*"
+	]
+}
