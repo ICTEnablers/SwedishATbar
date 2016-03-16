@@ -43,7 +43,7 @@
 		});
 		
 		AtKit.addLocalisationMap("se", {
-			"css_title" : "Ändra utseende",
+			"css_title" : "Ändra färger",
 			"css_changeColour" : "Ändra färger",
 			"css_changeToolbar": "Ändra ATbars färger",
 			"css_changeText": "Ändra färg på text och länkar",
@@ -305,8 +305,5 @@
 		AtKit.registerPlugin(pluginName, plugin);
 	}
 
-<<<<<<< HEAD
+
 })();
-=======
-})();
->>>>>>> 2a57d43ba7690b0e2dfb7ae9b4d01860f6d65183
