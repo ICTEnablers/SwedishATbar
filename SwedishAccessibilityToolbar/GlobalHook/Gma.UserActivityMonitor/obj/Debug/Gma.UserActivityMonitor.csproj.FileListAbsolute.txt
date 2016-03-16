@@ -1,0 +1,17 @@
+C:\Users\Erik\workspace\GitHub\ArabicAccessibilityToolbar\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.xml
+C:\Users\Erik\workspace\GitHub\ArabicAccessibilityToolbar\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Erik\workspace\GitHub\ArabicAccessibilityToolbar\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Erik\workspace\GitHub\ArabicAccessibilityToolbar\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.csprojResolveAssemblyReference.cache
+C:\Users\Erik\workspace\GitHub\ArabicAccessibilityToolbar\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Erik\workspace\GitHub\ArabicAccessibilityToolbar\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.xml
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.csprojResolveAssemblyReference.cache
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Erik\workspace\GitHub\SwedishATbar\SwedishAccessibilityToolbar\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.xml
+C:\Users\Erik\workspace\GitHub\SwedishATbar\SwedishAccessibilityToolbar\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Erik\workspace\GitHub\SwedishATbar\SwedishAccessibilityToolbar\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Erik\workspace\GitHub\SwedishATbar\SwedishAccessibilityToolbar\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Erik\workspace\GitHub\SwedishATbar\SwedishAccessibilityToolbar\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.pdb

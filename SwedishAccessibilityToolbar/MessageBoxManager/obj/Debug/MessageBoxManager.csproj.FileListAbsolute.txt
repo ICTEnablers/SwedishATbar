@@ -1,0 +1,15 @@
+C:\Users\Erik\workspace\GitHub\ArabicAccessibilityToolbar\MessageBoxManager\bin\Debug\MessageBoxManager.dll
+C:\Users\Erik\workspace\GitHub\ArabicAccessibilityToolbar\MessageBoxManager\bin\Debug\MessageBoxManager.pdb
+C:\Users\Erik\workspace\GitHub\ArabicAccessibilityToolbar\MessageBoxManager\obj\Debug\MessageBoxManager.csprojResolveAssemblyReference.cache
+C:\Users\Erik\workspace\GitHub\ArabicAccessibilityToolbar\MessageBoxManager\obj\Debug\MessageBoxManager.dll
+C:\Users\Erik\workspace\GitHub\ArabicAccessibilityToolbar\MessageBoxManager\obj\Debug\MessageBoxManager.pdb
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\MessageBoxManager\bin\Debug\MessageBoxManager.dll
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\MessageBoxManager\bin\Debug\MessageBoxManager.pdb
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\MessageBoxManager\obj\Debug\MessageBoxManager.csprojResolveAssemblyReference.cache
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\MessageBoxManager\obj\Debug\MessageBoxManager.dll
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\MessageBoxManager\obj\Debug\MessageBoxManager.pdb
+C:\Users\Erik\workspace\GitHub\SwedishATbar\SwedishAccessibilityToolbar\MessageBoxManager\bin\Debug\MessageBoxManager.dll
+C:\Users\Erik\workspace\GitHub\SwedishATbar\SwedishAccessibilityToolbar\MessageBoxManager\bin\Debug\MessageBoxManager.pdb
+C:\Users\Erik\workspace\GitHub\SwedishATbar\SwedishAccessibilityToolbar\MessageBoxManager\obj\Debug\MessageBoxManager.csprojResolveAssemblyReference.cache
+C:\Users\Erik\workspace\GitHub\SwedishATbar\SwedishAccessibilityToolbar\MessageBoxManager\obj\Debug\MessageBoxManager.dll
+C:\Users\Erik\workspace\GitHub\SwedishATbar\SwedishAccessibilityToolbar\MessageBoxManager\obj\Debug\MessageBoxManager.pdb

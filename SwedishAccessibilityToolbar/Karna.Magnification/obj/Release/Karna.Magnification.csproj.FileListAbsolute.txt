@@ -1,0 +1,12 @@
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\Karna.Magnification\bin\Release\Karna.Magnification.dll
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\Karna.Magnification\bin\Release\Karna.Magnification.pdb
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\Karna.Magnification\bin\Release\Gma.UserActivityMonitor.dll
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\Karna.Magnification\obj\Release\Karna.Magnification.csprojResolveAssemblyReference.cache
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\Karna.Magnification\obj\Release\Karna.Magnification.dll
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\Karna.Magnification\obj\Release\Karna.Magnification.pdb
+C:\Users\Erik\workspace\GitHub\SwedishATbar\SwedishAccessibilityToolbar\Karna.Magnification\bin\Release\Karna.Magnification.dll
+C:\Users\Erik\workspace\GitHub\SwedishATbar\SwedishAccessibilityToolbar\Karna.Magnification\bin\Release\Karna.Magnification.pdb
+C:\Users\Erik\workspace\GitHub\SwedishATbar\SwedishAccessibilityToolbar\Karna.Magnification\bin\Release\Gma.UserActivityMonitor.dll
+C:\Users\Erik\workspace\GitHub\SwedishATbar\SwedishAccessibilityToolbar\Karna.Magnification\obj\Release\Karna.Magnification.csprojResolveAssemblyReference.cache
+C:\Users\Erik\workspace\GitHub\SwedishATbar\SwedishAccessibilityToolbar\Karna.Magnification\obj\Release\Karna.Magnification.dll
+C:\Users\Erik\workspace\GitHub\SwedishATbar\SwedishAccessibilityToolbar\Karna.Magnification\obj\Release\Karna.Magnification.pdb

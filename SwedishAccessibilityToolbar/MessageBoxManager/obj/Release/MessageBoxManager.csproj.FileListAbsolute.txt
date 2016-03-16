@@ -1,0 +1,9 @@
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\MessageBoxManager\bin\Release\MessageBoxManager.dll
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\MessageBoxManager\bin\Release\MessageBoxManager.pdb
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\MessageBoxManager\obj\Release\MessageBoxManager.dll
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\MessageBoxManager\obj\Release\MessageBoxManager.pdb
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\MessageBoxManager\obj\Release\MessageBoxManager.csprojResolveAssemblyReference.cache
+C:\Users\Erik\workspace\GitHub\SwedishATbar\SwedishAccessibilityToolbar\MessageBoxManager\bin\Release\MessageBoxManager.dll
+C:\Users\Erik\workspace\GitHub\SwedishATbar\SwedishAccessibilityToolbar\MessageBoxManager\bin\Release\MessageBoxManager.pdb
+C:\Users\Erik\workspace\GitHub\SwedishATbar\SwedishAccessibilityToolbar\MessageBoxManager\obj\Release\MessageBoxManager.dll
+C:\Users\Erik\workspace\GitHub\SwedishATbar\SwedishAccessibilityToolbar\MessageBoxManager\obj\Release\MessageBoxManager.pdb

@@ -1,0 +1,5 @@
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\GlobalHook\Gma.UserActivityMonitor\bin\Release\Gma.UserActivityMonitor.dll
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\GlobalHook\Gma.UserActivityMonitor\obj\Release\Gma.UserActivityMonitor.dll
+C:\Users\Erik\workspace\GitHub\SwedishATbar\ArabicAccessibilityToolbar\GlobalHook\Gma.UserActivityMonitor\obj\Release\Gma.UserActivityMonitor.csprojResolveAssemblyReference.cache
+C:\Users\Erik\workspace\GitHub\SwedishATbar\SwedishAccessibilityToolbar\GlobalHook\Gma.UserActivityMonitor\bin\Release\Gma.UserActivityMonitor.dll
+C:\Users\Erik\workspace\GitHub\SwedishATbar\SwedishAccessibilityToolbar\GlobalHook\Gma.UserActivityMonitor\obj\Release\Gma.UserActivityMonitor.dll
