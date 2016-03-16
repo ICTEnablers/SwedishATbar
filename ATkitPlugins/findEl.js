@@ -42,13 +42,10 @@
 						if(e.which == 13 && findEl_settings.isCtrl){
 							var input = $lib('#asTypeInput').val();
 							/*findEl_settings.storage.searchElementStorage = [];
-
 							$lib.each(findEl_settings.storage.elementStorage, function(i, v){
 								if(v.html().substring(0, input.length).toLowerCase() == input.toLowerCase()) findEl_settings.storage.searchElementStorage.push(v.get(0));
 							});
-
 							findEl_settings.storage.elementStorage = findEl_settings.storage.searchElementStorage;
-
 							var elements = AtKit.call('locateElements', findEl_settings.storage.elementStorage);
 							AtKit.message(elements, function(){ $lib('#facebox a:first').focus(); });*/
 
@@ -72,7 +69,8 @@
 			AtKit.getPluginURL() + 'images/document-icon.png',
 			function(dialogs, functions){
 				findEl_settings.searchType = 'h1, h2, h3, h4, h5';
-				var elements = AtKit.call('locateElements', $lib(findEl_settings.searchType));
+				var elements = "";
+				elements = AtKit.call('locateElements', $lib(findEl_settings.searchType));
 
 				AtKit.message(elements, function(){
 					$lib('#facebox a:first').focus();
@@ -88,14 +86,16 @@
 			AtKit.localisation("findEl_findlinks"),
 			AtKit.getPluginURL() + 'images/document-export.png',
 			function(dialogs, functions){
+				AtKit.message("");
 				findEl_settings.searchType = "a";
-	
-				var elements = AtKit.call('locateElements', $lib(findEl_settings.searchType));
+				var elements = "";
+				elements = AtKit.call('locateElements', $lib(findEl_settings.searchType));
 
 				AtKit.message(elements, function(){
 					$lib('#facebox a:first').focus();
 					AtKit.call('applyCSS', '#searchElementsHolder a');
-				});				
+				});		
+						
 			},
 			null,
 			globalFunctions
@@ -123,7 +123,7 @@
 			if(elements.length == 0) return $lib("<p>", { html: "No elements found" });
 
 			//output.append( inputText );
-
+			console.log("e;"+elements.length);
 
 			var x = 1;
 
@@ -151,8 +151,13 @@
 
 					else if(tagName == "H1" || tagName == "H2" || tagName == "H3" || tagName == "H4" || tagName == "H5"){
 						var offset = mainEl.offset();
-
-						$lib.scrollTo(offset.top - 80, 800);
+						var isChrome = !!window.chrome && !!window.chrome.webstore;
+						if(isChrome) {
+							setTimeout(function() {window.scrollTo(offset.top - 80, 800);},10);
+						}
+						else {
+							$lib.scrollTo(offset.top - 80, 800);
+						}
 
 						mainEl.css("background-color", "red");
 						mainEl.animate({ opacity: 0.1 }, 500, function() { 
@@ -165,6 +170,7 @@
 							})
 						});
 					}
+					AtKit.hideDialog();
 				});
 
 				findEl_settings.storage.elementStorage.push( mainEl );
