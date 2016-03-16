@@ -4,11 +4,13 @@
  *
  *
  * Heavily modified by Seb Skuse (scs@ecs.soton.ac.uk) to use Greasemonkey XHR requests, as well as custom XHR to get around limitations in other browsers.
+ * 
+ * Modified by Erik Zetterström to suit the Swedish ATbar.
  */
   /*!
  * ATBar
  *
- * http://www.atbar.org/
+ * http://www.atbar.se/
  *
  * Licensed under the BSD Licence.
  * http://www.opensource.org/licenses/bsd-license.php
@@ -50,7 +52,7 @@
 			"spell_title" : "Starta stavningskontroll",
 			"spell_complete": "Stavningskontroll klar!",
 			"spell_mistake": "Stavfel",
-			"spell_suggestions": "Stavningsf&oumlrslag",
+			"spell_suggestions": "Stavningsf&oumlrslag, v&aumllj ord",
 			"spell_ignore": "Ignorera",
 			"spell_replace": "Ers&aumltt",
 			"spell_record": "Skicka anonym anv&aumlndningsdata?",
@@ -90,12 +92,13 @@
 
 			// If there are no more replacements, we're done.
 			if($lib(selector).children().length === 0){
-				AtKit.message(spell_settings.completeDialog);
+				AtKit.hideDialog();
+				//AtKit.message(spell_settings.completeDialog);
 			} else {
 				$lib(selector).trigger('change');
 			}
 			
-			AtKit.call('recordSpell');
+			//AtKit.call('recordSpell');
 			
 		});
 		
@@ -272,6 +275,7 @@
 				
 				parseResults: function(res) {
 					console.log("parseResults: "+res.toLocaleString());
+					var ignoredWords = sessionStorage.ATbarIgnoredSpelling;//localStorage.getItem("ATbarIgnoredWords");
 					var self = this;
 					self.results = {};
 					self.results.words = {};
@@ -281,17 +285,33 @@
 					for(r in res){
 						console.log("parse word: "+r);
 						console.log("res[r]: "+res[r]);
-						self.results.words[r] = {
-							word: r,
-							suggestions: res[r],
-							w_offset: 0
-						};
-						i++;
+						if(ignoredWords!=null) {
+						  	if(!ignoredWords.includes(" "+r.toLowerCase()+",") && r!=="each") {
+								self.results.words[r] = {
+									word: r,
+									suggestions: res[r],
+									w_offset: 0
+								};
+								i++;
+							}
+						}
+						else {
+							if(r!=="each") {
+								self.results.words[r] = {
+									word: r,
+									suggestions: res[r],
+									w_offset: 0
+								};
+								i++;
+							}
+						}
+					
+						
 					}
 
 					self.results.count = i;
 
-				console.log("result count: "+self.results.count);
+					console.log("result count: "+self.results.count);
 					this.displayResults();
 				},
 			
@@ -318,6 +338,9 @@
 
 								var word = self.results.words[$lib(this).val()];
 								console.log("word: "+$lib(this).val());
+								if(word==null) {
+									return;
+								}
 								var suggestions = word.suggestions;
 								
 								$lib.each(suggestions, function(i,v){
@@ -359,6 +382,10 @@
 						var mistake = dlg.find(selector).val();
 						spellngIncorrect = mistake;
 						
+						var tempList=sessionStorage.ATbarIgnoredSpelling;//localStorage.getItem("ATbarIgnoredWords");
+						tempList+=" "+spellngIncorrect.toLowerCase()+",";
+						sessionStorage.ATbarIgnoredSpelling=tempList;
+						//localStorage.setItem("ATbarIgnoredWords", tempList);
 						AtKit.call('removeIncorrectWord');
 					});
 
@@ -403,6 +430,37 @@
 			AtKit.localisation("spell_title"),
 			AtKit.getPluginURL() + 'images/spell-off.png',
 			function(dialogs, functions){
+				
+				/*if(sessionStorage.ATbarSpelling=='1' && sessionStorage.started=='1') { //on, switch off
+					
+						console.log("ATbar spelling stop.");
+						// Are there any TinyMCE fields on this page?
+						if((typeof AtKit.__env.window.tinyMCE) != 'undefined'){
+							tinyMCE = AtKit.__env.window.tinyMCE;	
+							tinyMCE.activeEditor.onKeyPress = null;
+						}
+						if((typeof AtKit.__env.window.CKEDITOR) != 'undefined'){
+							CKE = AtKit.__env.window.CKEDITOR;
+							for(var o in CKE.instances){
+								CKE.instances[o].document.unbind('keypress');
+							}
+						}
+						
+						console.log("1");
+						AtKit.set('spellInitialised', false);
+						console.log("2");
+						$lib("textarea").removeSpellCheck();
+						$lib('input[type=text]').removeSpellCheck();
+						console.log("3");
+						$lib('#at-lnk-spell').find('img').attr('src', AtKit.getPluginURL() + "images/spell-off.png");
+						console.log("4");
+						sessionStorage.ATbarSpelling='0';
+						return;
+				}*/
+				
+				sessionStorage.ATbarSpelling='1';
+				
+				console.log("ATbar spelling start.");
 				// Initialise spelling if not already
 				if(AtKit.get('spellInitialised') === false) { console.log("init"); AtKit.call('initSpell'); }
 
