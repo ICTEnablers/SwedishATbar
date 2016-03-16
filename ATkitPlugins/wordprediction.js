@@ -1,6 +1,7 @@
 (function(){
 
 	var pluginName = "wordprediction";
+	var suggestions = "";
 	var plugin = function(){
 
 		$lib = AtKit.lib();
@@ -79,13 +80,13 @@
 			var aauml = String.fromCharCode(196);
 			var oouml = String.fromCharCode(214);
 			var eacute = String.fromCharCode(233);
-			str=str.replace("\\u00e5",aring);
-			str=str.replace("\\u00e4",auml);
-			str=str.replace("\\u00f6",ouml);
-			str=str.replace("\\u00c5",aaring);
-			str=str.replace("\\u00c4",aauml);
-			str=str.replace("\\u00d6",oouml);
-			str=str.replace("\\u00e9",eacute);
+			str=str.replace(/\\u00e5/g,aring);
+			str=str.replace(/\\u00e4/g,auml);
+			str=str.replace(/\\u00f6/g,ouml);
+			str=str.replace(/\\u00c5/g,aaring);
+			str=str.replace(/\\u00c4/g,aauml);
+			str=str.replace(/\\u00d6/g,oouml);
+			str=str.replace(/\\u00e9/g,eacute);
 			//str=str.replace("\\u00a3","£");
 			//str=str.replace("\\u20ac","€");
 			return str;
@@ -112,7 +113,19 @@
 
 				ctrlModifier = false;
 				altModifier = false;
+				
+				if(sessionStorage.ATbarWordprediction=='1') { //on, switch off
+					suggestions.remove()
+					$lib('input[type="text"], textarea').unbind('keydown');
+					console.log("ATbar Wordprediction UNBOUND");
+					$lib('#at-lnk-wordprediction').find('img').attr('src', AtKit.getPluginURL() + "images/aitype.png");
+					sessionStorage.ATbarWordprediction='0';
+					return;	
+				}
 
+				console.log("ATbar Wordprediction binding");
+				sessionStorage.ATbarWordprediction='1';		
+				$lib('#at-lnk-wordprediction').find('img').attr('src', AtKit.getPluginURL() + "images/aitype_on.png");
 				$lib('input[type="text"], textarea').bind('keydown', function(e){
 					if(e.which == 17 || e.which == 18 || ctrlModifier || altModifier) return; // ctrl & alt keys ignore.
 					
@@ -234,7 +247,7 @@
 							var height = el.outerHeight();
 
 
-							var suggestions = "";
+							suggestions = "";
 
 							if($lib('#AtKitWordPrediction').length === 0){
 								suggestions = $lib('<div>', { "id": "AtKitWordPrediction" }).css({
